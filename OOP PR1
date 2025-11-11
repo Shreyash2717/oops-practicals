@@ -1,0 +1,37 @@
+import java.util.Scanner;
+    class student{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+System.out.print("Enter number first no:: ");
+        int n1=sc.nextInt();
+        System.out.print("Enter the second no: ");
+        int n2=sc.nextInt();
+        System.out.print("Enter the choice:(+,-,*,/)::  ");
+        char operator = sc.next().charAt(0);
+        int result;
+        switch(operator){
+            case '+':
+            result = n1 + n2;
+            break;
+            case '-':
+            result =(n2-n2);
+            break;
+            case '*':
+            result =(n1*n2);
+            break;
+            case '/':
+            if (n2==0)
+            {
+                System.out.println("cannot divided by zero..");
+                return;
+            }
+            result =(n1/n2);
+            break;
+            default:
+            System.out.println("invalid operator.");
+            return;
+         }
+         System.out.println("result:: "+result);
+        }
+    }
